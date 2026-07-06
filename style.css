@@ -12,7 +12,7 @@ body{
 }
 
 .hero{
-    min-height:90vh;
+    min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -68,13 +68,12 @@ body{
     flex:1;
     display:flex;
     justify-content:center;
-    margin-bottom:10px;
+    min-width:320px;
 }
 
 .character{
-    width:260px;
-    max-width:80%;
-    height:auto;
+    width:500px;
+    max-width:100%;
     filter:drop-shadow(0 20px 40px rgba(0,0,0,.45));
 }
 
@@ -96,12 +95,11 @@ body{
     gap:20px;
 }
 .cards{
-    display:flex;
-    flex-direction:column;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
     max-width:900px;
     margin:0 auto;
-}
 }
 
     .card{
@@ -138,11 +136,10 @@ footer{
 
     .right{
         order:-1;
-        margin-bottom:30px;
     }
 
     .character{
-        width:240px;
+        width:340px;
     }
 
     .logo{
