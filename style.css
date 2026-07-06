@@ -65,6 +65,7 @@ body{
 }
 
 .right{
+    flex:1;
     display:flex;
     justify-content:center;
     margin-bottom:40px;
@@ -137,15 +138,12 @@ footer{
 
     .right{
         order:-1;
+        margin-bottom:30px;
     }
 
     .character{
-    width:240px;
-}
-
-.right{
-    margin-bottom:30px;
-}
+        width:240px;
+    }
 
     .logo{
         width:260px;
