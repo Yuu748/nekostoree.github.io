@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#08111f;
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+    position:relative;
+    background:linear-gradient(180deg,#08111f,#0f1d33);
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.left{
+    flex:1;
+    min-width:320px;
+}
+
+.logo{
+    width:320px;
+    max-width:100%;
+    margin-bottom:20px;
+}
+
+.tagline{
+    color:#9fb3d9;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.contact-btn{
+    display:inline-block;
+    background:#3b82f6;
+    color:white;
+    padding:15px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#2563eb;
+    transform:translateY(-3px);
+}
+
+.right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    min-width:320px;
+}
+
+.character{
+    width:500px;
+    max-width:100%;
+    filter:drop-shadow(0 20px 40px rgba(0,0,0,.45));
+}
+
+.social{
+    background:#0d1728;
+    padding:80px 20px;
+}
+
+.social h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:34px;
+}
+
+.links{
+    max-width:800px;
+    margin:auto;
+    display:grid;
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(90deg,#3b82f6,#2563eb);
+    color:white;
+    text-decoration:none;
+    padding:22px;
+    border-radius:18px;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px) scale(1.02);
+    box-shadow:0 15px 30px rgba(37,99,235,.35);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#8fa4c7;
+}
+
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .right{
+        order:-1;
+    }
+
+    .character{
+        width:340px;
+    }
+
+    .logo{
+        width:260px;
+    }
+}
