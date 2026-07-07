@@ -94,32 +94,66 @@ body{
     display:grid;
     gap:20px;
 }
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    max-width:900px;
+.social{
+    background:#0d1728;
+    padding:80px 20px;
+}
+
+.social-card{
+    max-width:420px;
     margin:0 auto;
+    background:#131a2d;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 0 35px rgba(59,130,246,.25);
 }
 
-    .card{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:90px;
-    background:linear-gradient(180deg,#4f8cff,#2d62e8);
-    color:white;
+.social-card h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:34px;
+}
+
+.card{
+    display:block;
+    width:100%;
+    text-align:center;
     text-decoration:none;
-    border-radius:20px;
-    font-size:28px;
+    color:white;
+    padding:18px;
+    margin:15px 0;
+    border-radius:15px;
+    font-size:22px;
     font-weight:bold;
-    transition:.3s;
+    transition:.25s;
 }
-
 
 .card:hover{
-    transform:translateY(-5px) scale(1.02);
-    box-shadow:0 15px 30px rgba(37,99,235,.35);
+    transform:translateY(-4px);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.tiktok{
+    background:#111;
+}
+
+.instagram{
+    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+
+.discord{
+    background:#5865F2;
+}
+
+.testimoni{
+    background:#f59e0b;
 }
 
 footer{
