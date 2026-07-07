@@ -19,7 +19,7 @@ body{
     text-align:center;
 
     background:
-linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20)),
 url("hero.jpg.jpg");
 
     background-size:cover;
@@ -40,6 +40,13 @@ url("hero.jpg.jpg");
 .left{
     flex:1;
     min-width:320px;
+    transform:translateY(-40px);
+}
+
+.left h1{
+
+    font-size:56px;
+    text-shadow:0 4px 15px rgba(0,0,0,.6);
 }
 
 .logo{
