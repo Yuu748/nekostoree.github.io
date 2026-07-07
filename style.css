@@ -134,6 +134,82 @@ body{
     transform:translateY(-4px);
 }
 
+.dropdown{
+
+    position:relative;
+
+}
+
+.group-btn{
+
+    width:100%;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:30px;
+
+}
+
+.dropdown-content{
+
+    display:none;
+
+    margin-top:10px;
+
+    background:#1d2438;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.dropdown-content a{
+
+    display:block;
+
+    padding:16px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.dropdown-content a:last-child{
+
+    border-bottom:none;
+
+}
+
+.dropdown-content a:hover{
+
+    background:#2b3554;
+
+}
+
+.dropdown.active .dropdown-content{
+
+    display:block;
+
+}
+
+/* BATAS AKHIR */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#8fa4c7;
+
+}
+
 .whatsapp{
     background:#25D366;
 }
