@@ -22,7 +22,7 @@ body{
 linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
 url("hero.jpg.PNG");
 
-    background-size:150%;
+    background-size:350%;
     background-position:center;
     background-repeat:no-repeat;
 }
