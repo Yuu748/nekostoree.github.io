@@ -74,7 +74,9 @@ body{
 .character{
     width:500px;
     max-width:100%;
-    filter:drop-shadow(0 20px 40px rgba(0,0,0,.45));
+    filter:
+        drop-shadow(0 0 25px rgba(65,145,255,.35))
+        drop-shadow(0 20px 40px rgba(0,0,0,.5));
 }
 
 .social{
@@ -179,4 +181,22 @@ footer{
     .logo{
         width:260px;
     }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.left,
+.right,
+.social-card{
+    animation:fadeUp .8s ease;
 }
