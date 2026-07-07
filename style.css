@@ -140,29 +140,30 @@ body{
 
 .group-btn{
     width:100%;
+    background:linear-gradient(180deg,#69A8FF,#3B82F6);
+    color:white;
     border:none;
-    cursor:pointer;
+    border-radius:20px;
+    padding:24px;
     font-size:30px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 .dropdown-content{
-    display:none;
-    margin-top:10px;
-    background:#1d2438;
-    border-radius:15px;
+    background:#18345f;
+    border-radius:20px;
     overflow:hidden;
 }
 
 .dropdown-content a{
-    display:block;
-    padding:16px;
     color:white;
-    text-decoration:none;
+    background:#24487f;
     border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.dropdown-content a:last-child{
-    border-bottom:none;
+.dropdown-content a:hover{
+    background:#3564ad;
 }
 
 .dropdown-content a:hover{
