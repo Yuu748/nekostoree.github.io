@@ -509,3 +509,29 @@ footer{
     text-shadow:0 2px 10px rgba(0,0,0,.5);
 
 }
+
+.stock{
+
+    padding:70px 20px;
+
+    background:#08111f;
+
+}
+
+.stock h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+#stockContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
