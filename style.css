@@ -345,3 +345,45 @@ footer{
 .social-card{
     animation:fadeUp .8s ease;
 }
+
+#catMascot{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+
+    width:110px;
+
+    cursor:pointer;
+    z-index:9999;
+
+    user-select:none;
+
+    transition:
+        transform .18s ease,
+        filter .25s ease;
+}
+
+#catMascot:hover{
+    transform:scale(1.06);
+}
+
+#catMascot.active{
+    transform:
+        scale(1.15)
+        translateY(-12px)
+        rotate(-5deg);
+}
+
+@media(max-width:768px){
+
+    #catMascot{
+
+        width:90px;
+
+        right:12px;
+
+        bottom:12px;
+
+    }
+
+}
