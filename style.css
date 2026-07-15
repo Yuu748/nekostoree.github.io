@@ -16,6 +16,7 @@ body{
 }
 
 .hero{
+    position: relative;
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -347,15 +348,15 @@ footer{
 }
 
 #catMascot{
-    position:fixed;
-    right:55px;
-    bottom:135px;
+    position: absolute;
 
-    width:110px;
+    right: 35px;
+    bottom: 25px;
+
+    width: 95px;
 
     cursor:pointer;
-    z-index:9999;
-
+    z-index:20;
     user-select:none;
 
     transition:
@@ -372,18 +373,5 @@ footer{
         scale(1.15)
         translateY(-12px)
         rotate(-5deg);
-}
-
-@media(max-width:768px){
-
-    #catMascot{
-
-        width:90px;
-
-        right:45px;
-
-        bottom:120px;
-
-    }
-
+        }
 }
