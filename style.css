@@ -65,7 +65,8 @@ url("hero.jpg.jpg");
 .left p{
     font-family:'Poppins',sans-serif;
     font-size:21px;
-    font-weight:900;
+    margin-top:-15px;
+    font-weight:400;
     color:#d7dceb;
 }
 
