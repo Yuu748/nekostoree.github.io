@@ -44,8 +44,12 @@ url("hero.jpg.jpg");
 }
 
 .left h1{
-    font-size:35px;
-    text-shadow:0 4px 15px rgba(0,0,0,.6);
+    font-family:'Orbitron', sans-serif;
+    font-size:56px;
+    font-weight:800;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    text-shadow:0 0 20px rgba(255,255,255,.25);
 }
 
 .logo{
