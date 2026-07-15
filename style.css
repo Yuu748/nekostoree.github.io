@@ -361,7 +361,7 @@ footer{
 #catMascot{
     position: absolute;
     right: 20px;
-    bottom: 0px;
+    bottom: -10px;
     width: 90px;
 
     cursor:pointer;
