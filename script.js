@@ -16,13 +16,13 @@ cat.addEventListener("click", () => {
     sound.currentTime = 0;
     sound.play();
 
-    cat.src = "cat_meow.png";
+    cat.src = "cat_meow.PNG";
 
     cat.classList.add("active");
 
     setTimeout(() => {
 
-        cat.src = "cat_idle.png";
+        cat.src = "cat_idle.PNG";
 
         cat.classList.remove("active");
 
