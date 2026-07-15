@@ -387,3 +387,63 @@ footer{
 .dropdown-content a{
     font-family: 'Exo 2', sans-serif;
 }
+
+.video-popup{
+    position:fixed;
+    inset:0;
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.8);
+
+    z-index:99999;
+
+    opacity:0;
+    transition:opacity .25s ease;
+}
+
+.video-popup.show{
+    display:flex;
+    opacity:1;
+}
+
+.video-box{
+    position:relative;
+
+    width:90%;
+    max-width:420px;
+
+    transform:scale(.85);
+    transition:transform .25s ease;
+}
+
+.video-popup.show .video-box{
+    transform:scale(1);
+}
+
+.video-box video{
+    width:100%;
+    display:block;
+    border-radius:18px;
+}
+
+.close-video{
+    position:absolute;
+
+    top:-45px;
+    right:0;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+    color:black;
+
+    font-size:20px;
+    cursor:pointer;
+}
