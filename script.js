@@ -94,3 +94,45 @@ videoPopup.addEventListener("click",(e)=>{
     }
 
 });
+
+async function loadStock(){
+
+    const stockContainer = document.getElementById("stockContainer");
+
+    if(!stockContainer) return;
+
+    const querySnapshot = await getDocs(collection(db,"accounts"));
+
+    stockContainer.innerHTML = "";
+
+    querySnapshot.forEach((doc)=>{
+
+        const item = doc.data();
+
+        stockContainer.innerHTML += `
+
+        <div class="stock-card">
+
+            <img src="${item.image}">
+
+            <h3>${item.name}</h3>
+
+            <p>🇮🇩 Rp ${item.priceIDR}</p>
+
+            <p>🇹🇭 ฿ ${item.priceTHB}</p>
+
+            <p>🇲🇾 RM ${item.priceMYR}</p>
+
+            <p>🇺🇸 $${item.priceUSD}</p>
+
+            <span>${item.status}</span>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+loadStock();
