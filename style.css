@@ -72,7 +72,12 @@ url("hero.jpg.jpg");
 }
 
 .contact-btn{
-    display:inline-block;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:220px;   /* samakan lebarnya */
+
     background:#3b82f6;
     color:#fff;
     padding:12px 30px;
