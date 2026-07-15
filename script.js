@@ -14,18 +14,17 @@ cat.addEventListener("click", () => {
 
     sound.pause();
     sound.currentTime = 0;
-    sound.play();
 
     cat.src = "cat_meow.PNG";
-
     cat.classList.add("active");
 
-    setTimeout(() => {
+    sound.play();
 
-        cat.src = "cat_idle.PNG";
+});
 
-        cat.classList.remove("active");
+sound.addEventListener("ended", () => {
 
-    },700);
+    cat.src = "cat_idle.PNG";
+    cat.classList.remove("active");
 
 });
