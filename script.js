@@ -28,3 +28,34 @@ sound.addEventListener("ended", () => {
     cat.classList.remove("active");
 
 });
+
+const instagramBtn = document.getElementById("instagramBtn");
+const videoPopup = document.getElementById("videoPopup");
+const promoVideo = document.getElementById("promoVideo");
+const closeVideo = document.getElementById("closeVideo");
+
+if (instagramBtn && videoPopup && promoVideo && closeVideo) {
+
+    instagramBtn.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        videoPopup.classList.add("show");
+
+        promoVideo.currentTime = 0;
+
+        promoVideo.play();
+
+    });
+
+    closeVideo.addEventListener("click", () => {
+
+        promoVideo.pause();
+
+        promoVideo.currentTime = 0;
+
+        videoPopup.classList.remove("show");
+
+    });
+
+}
