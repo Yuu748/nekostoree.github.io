@@ -62,11 +62,11 @@ url("hero.jpg.jpg");
     margin-bottom:20px;
 }
 
-.tagline{
-    color:#9fb3d9;
-    font-size:22px;
-    font-weight:650;
-    margin-bottom:30px;
+.left p{
+    font-family:'Poppins',sans-serif;
+    font-size:21px;
+    font-weight:400;
+    color:#d7dceb;
 }
 
 .contact-btn{
@@ -105,10 +105,11 @@ url("hero.jpg.jpg");
     padding:80px 20px;
 }
 
-.social h2{
-    text-align:center;
-    margin-bottom:35px;
+.social-card h2{
+    font-family:'Orbitron',sans-serif;
     font-size:34px;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
 .links{
@@ -138,6 +139,7 @@ url("hero.jpg.jpg");
 }
 
 .card{
+    font-family:'Poppins',sans-serif;
     display:block;
     width:100%;
     text-align:center;
@@ -147,7 +149,7 @@ url("hero.jpg.jpg");
     margin:15px 0;
     border-radius:15px;
     font-size:22px;
-    font-weight:bold;
+    font-weight:600;
     transition:.25s;
 }
 
