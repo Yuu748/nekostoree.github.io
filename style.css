@@ -374,3 +374,11 @@ footer{
         rotate(-5deg);
         }
 }
+
+.social-card,
+.social-card h2,
+.card,
+.group-btn,
+.dropdown-content a{
+    font-family: 'Exo 2', sans-serif;
+}
