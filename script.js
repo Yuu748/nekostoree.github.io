@@ -59,3 +59,17 @@ if (instagramBtn && videoPopup && promoVideo && closeVideo) {
     });
 
 }
+
+videoPopup.addEventListener("click",(e)=>{
+
+    if(e.target===videoPopup){
+
+        promoVideo.pause();
+
+        promoVideo.currentTime=0;
+
+        videoPopup.classList.remove("show");
+
+    }
+
+});
